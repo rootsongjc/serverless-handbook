@@ -7,8 +7,8 @@ Serverless 是云原生技术发展的高级阶段，可以使开发者更聚焦
 ## 关于本书
 
 <p align="left">
-  <a href="https://circleci.com/gh/rootsongjc/kubernetes-handbook/tree/master">
-    <img src="https://circleci.com/gh/rootsongjc/kubernetes-handbook/tree/master.svg?style=svg" alt="CircleCI"/>
+  <a href="https://circleci.com/gh/rootsongjc/serverless-handbook/tree/master">
+    <img src="https://circleci.com/gh/rootsongjc/serverless-handbook/tree/master.svg?style=svg" alt="CircleCI"/>
   </a>
 </p>
 
