@@ -6,6 +6,8 @@ Serverless 是云原生技术发展的高级阶段，可以使开发者更聚焦
 
 ## 关于本书
 
+[![CircleCI](https://circleci.com/gh/rootsongjc/serverless-handbook.svg?style=svg)](https://circleci.com/gh/rootsongjc/serverless-handbook)
+
 本书是本人学习和实践 Serverless 过程中所整理的资料，主要关注的 Serverless 开源项目是 [Knative](https://github.com/knative)。
 
 ### 使用方式
