@@ -4,7 +4,7 @@ Kubernetes 的蓬勃发展由催生了一系列以它为基础的 Serverless 应
 
 - [dispatch](https://github.com/vmware/dispatch) - Dispatch is a framework for deploying and managing serverless style applications.
 - [faas-netes](https://github.com/alexellis/faas-netes) - Enable Kubernetes as a backend for Functions as a Service (OpenFaaS) https://github.com/alexellis/faas
-- [firecamp](https://github.com/cloudstax/firecamp) - Serverless Platform for the stateful services [https://www.cloudstax.io](https://www.cloudstax.io/)
+- [firecamp](https://github.com/cloudstax/firecamp) - Serverless Platform for the stateful services
 - [fission](https://github.com/fission/fission) - Fast Serverless Functions for Kubernetes [http://fission.io](http://fission.io/)
 - [fn](https://github.com/fnproject/fn) - The container native, cloud agnostic serverless platform. [http://fnproject.io](http://fnproject.io/)
 - [funktion](https://github.com/funktionio/funktion/) - a CLI tool for working with funktion https://funktion.fabric8.io/

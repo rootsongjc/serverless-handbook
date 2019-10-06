@@ -16,7 +16,7 @@ CNCF 技术监督委员会（TOC）会考虑：
 - **鼓励更多的 serverless 技术供应商和开源开发人员加入 CNCF**，以共享想法并相互借鉴创新。例如，保持 “Serverless Landscape” 文档中列出的开源项目更新，并维护功能矩阵。
 - **通过建立可互操作的 API 来培育开放的生态系统**，并通过供应商承诺和开源工具确保可互操作的实施。在平台提供商和第三方开发人员库创建者的帮助下，从事类似于 CSI 和 CNI 新的互操作性和可移植性工作。其中一些可能值得创建自己的 CNCF 工作组，或者可以作为 Serverless 工作组的倡议而继续。例如：
   - **事件**：定义通用事件格式和 API 以及元数据。可以在 [Serverless WG  Github 存储库](https://github.com/cncf/wg-serverless/tree/master/proposals)中找到一些初始建议。
-  - **部署**：利用既是 Serverless 提供者又是现有 CNCF 成员，成立一个新的工作组，探索可能采取的小步骤，以协调一组通用的功能定义元数据。例如：应用程序定义清单，例如 [AWS SAM](https://github.com/awslabs/serverless-application-model) 和 [OpenWhisk Packaging Specification](https://github.com/apache/incubator-openwhisk-wskdeploy/tree/master/specification%23openwhisk-packaging-specification)。
+  - **部署**：利用既是 Serverless 提供者又是现有 CNCF 成员，成立一个新的工作组，探索可能采取的小步骤，以协调一组通用的功能定义元数据。例如：应用程序定义清单，例如 [AWS SAM](https://github.com/awslabs/serverless-application-model) 和 [OpenWhisk Packaging Specification](https://github.com/apache/incubator-openwhisk-wskdeploy/tree/master/specification#openwhisk-packaging-specification)。
 
 - **跨不同提供商的 Serverless 平台运行函数 WorkFlow**。有许多使用场景，它们超出了触发单个函数的单个事件的范围，并且涉及到依次执行或并行执行，并由事件的不同组合 + 函数的返回值触发的多个函数的工作流。在工作流的上一步中。如果我们可以定义一组通用的构造，开发人员可以使用它们来定义其用例工作流，那么他们将是
   能够创建可在不同的 Serverless 平台上使用的工具。这些构造指定事件和函数之间的关系/交互作用，工作流中的函数之间的关系/交互作用以及如何将信息从一个函数传递给下一步骤的函数等。例如 AWS Step Function Constructs 和 Huawei Function Graph/Workflow Constructs。
