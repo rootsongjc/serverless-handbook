@@ -23,7 +23,10 @@
   - [CloudEvents](core/cloudevents.md)
   - [Workflow](core/workflow.md)
 
-## Knative
+## Knative 入门
+
+- [Knative 简介](knative-primer/overview.md)
+- [Knative 安装](knative-primer/installation.md)
 
 ## 社区
 
