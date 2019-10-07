@@ -30,7 +30,7 @@ Serverless 的使用场景示例如：
 
 传统的应用程序架构可能是这样的：
 
-![传统应用程序架构](https://ws2.sinaimg.cn/large/006tNbRwly1fv8y4dlfrrj30g104n74i.jpg)
+![传统应用程序架构](https://tva1.sinaimg.cn/large/006y8mN6ly1g7q0wn953ij30g104nglj.jpg)
 
 - 一个 app 前端，iOS 后者安卓
 - 用 Java 写的后端，使用 JBoss 或者 Tomcat 做 server 运行
@@ -40,6 +40,6 @@ Serverless 的使用场景示例如：
 
 这样的架构开发起来比较容易，但是维护起来确十分复杂，前端开发、后端的开发都需要十分专业的人员、环境的配置，还要有人专门维护数据库、应用的更新和升级。
 
-![Serverless架构](https://ws1.sinaimg.cn/large/006tNbRwly1fv8y4plly1j30fx0b4gm7.jpg)
+![Serverless 架构](https://tva1.sinaimg.cn/large/006y8mN6ly1g7q0zekuy8j30fx0b4t8u.jpg)
 
 而在 serverless 架构中，我们不再需要在服务器端代码中存储任何会话状态，而是直接将它们存储在 NoSQL 中，这样将使应用程序无状态，有助于弹性扩展。前端可以直接利用 BaaS 而减少后端的编码需求，这样架构的本质上是减少了应用程序开发的人力成本，降低了自己维护基础设施的风险，而且利用云的能力更便于扩展和快速迭代。
