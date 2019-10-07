@@ -12,13 +12,13 @@ FaaS（Functions as a Service）函数即服务，FaaS 是无服务器计算的�
 
 现在当大家讨论 Serverless 的时候首先想到的就是 FaaS，有点甚嚣尘上了。FaaS 本质上是一种事件驱动的由消息触发的服务，FaaS 供应商一般会集成各种同步和异步的事件源，通过订阅这些事件源，可以突发或者定期的触发函数运行。
 
-![服务端软件的运行环境](https://ws3.sinaimg.cn/large/006tNbRwgy1fv8y3p7v04j30n60bowff.jpg)
+![服务端软件的运行环境](https://tva1.sinaimg.cn/large/006y8mN6ly1g7pfbgktr9j30n60bower.jpg)
 
 传统的服务器端软件不同是经应用程序部署到拥有操作系统的虚拟机或者容器中，一般需要长时间驻留在操作系统中运行，而 FaaS 是直接将程序部署上到平台上即可，当有事件到来时触发执行，执行完了就可以卸载掉。
 
 下面是 Function-as-a-Service 全景图（图片来自 [Github](https://github.com/amyers1793/FunctionasaServiceLandscape))
 
-![FaaS Landscape](https://ws3.sinaimg.cn/large/006tNbRwgy1fv8y3cx0kuj30zk0k0wjh.jpg)
+![FaaS Landscape](https://tva1.sinaimg.cn/large/006y8mN6ly1g7pfbwfjfvj30zk0k0mzk.jpg)
 
 ### Serverless Landscape
 
