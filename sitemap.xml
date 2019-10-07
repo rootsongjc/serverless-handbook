@@ -14,6 +14,8 @@
 <url> <loc>https://jimmysong.io/serverless-handbook/core/events.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://jimmysong.io/serverless-handbook/core/cloudevents.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://jimmysong.io/serverless-handbook/core/workflow.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://jimmysong.io/serverless-handbook/knative-primer/overview.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://jimmysong.io/serverless-handbook/knative-primer/installation.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://jimmysong.io/serverless-handbook/community/cncf-serverless-wg.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://jimmysong.io/serverless-handbook/appendix/references.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
