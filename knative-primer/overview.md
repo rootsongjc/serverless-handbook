@@ -12,7 +12,9 @@ Knative 最初包含以下 3 个组件：
 - Eventing：提供用来使用和生成符合 CloudEvents 规范的事件的构建块。它包括对来自事件源的信息流的抽象，以及通过由可插拔发布/订阅代理服务提供支持的消息传递通道实现交付解耦。
 - Serving：可缩放至零、请求驱动的计算运行环境，利用 Istio 在各版本之间路由流量。Serving 的目标是为 Kubernetes 提供扩展功能，用于部署和运行 Serverless 工作负载。
 
-**注意：Knative 自 0.8 版本起去掉了 Build 组件，而使用 [tekoncd/pipeline](https://github.com/tektoncd/pipeline) 取代，只保留了 Eventing 和 Serving 组件。**
+> **[warning] 注意**
+>
+> Knative 自 0.8 版本起去掉了 Build 组件，转而使用 [tekoncd/pipeline](https://github.com/tektoncd/pipeline) 取代，只保留了 Eventing 和 Serving 组件。
 
 ## 受众
 

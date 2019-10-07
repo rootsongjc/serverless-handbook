@@ -12,6 +12,12 @@
 - 使用 Helm 安装
 - 不启用 SDS
 
+> **[info] 提示**
+> 
+> 截止本文发稿时 Istio 已发布 v1.3，但是为了保持兼容性，本文中仍使用 Istio v1.1.7，以保持与 Knative 官方要求的版本统一。
+
+运行以下命令安装 Knative。
+
 ```bash
 # Knative v0.9 在 Istio v1.1.7 验证过
 export ISTIO_VERSION=1.1.7
@@ -94,12 +100,16 @@ kubectl apply --filename https://github.com/knative/serving/releases/download/v0
    --filename https://github.com/knative/serving/releases/download/v0.9.0/monitoring.yaml
 ```
 
-因为 `quay.io`、`gcr.io`、`k8s.gcr.io`、`docker.elastic.co` 等镜像仓库在中国大陆无法访问，位于中国大陆的用户可以使用本书仓库中的 `manifests/knative/0.9` 目录下的 YAML 文件安装，其中以上镜像已替换为 DockerHub 镜像源。
+或者使用本书中提供的 YAML 直接安装。
 
 ```bash
 kubectl apply --selector knative.dev/crd-install=true  -f manifests/knative/0.9
 kubectl apply -f manifests/knative/0.9
 ```
+
+> **[info] 提示**
+> 
+> 因为 `quay.io`、`gcr.io`、`k8s.gcr.io`、`docker.elastic.co` 等镜像仓库在中国大陆无法访问，位于中国大陆的用户可以使用本书仓库中的 `manifests/knative/0.9` 目录下的 YAML 文件安装，其中以上镜像已替换为 DockerHub 镜像源。
 
 验证 Knative 安装。
 
