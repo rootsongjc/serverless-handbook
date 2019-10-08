@@ -34,8 +34,7 @@
         "lightbox",
         "ga",
         "copy-code-button",
-        "alerts",
-        "terminal"
+        "alerts"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -78,11 +77,6 @@
         },
         "ga": {
             "token": "UA-93485976-1"
-        },
-        "terminal": {
-            "copyButtons": true,
-            "fade": false,
-            "style": "white"
         }
     }
 }

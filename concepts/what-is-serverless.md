@@ -4,7 +4,7 @@ Serverless（无服务器架构）是指服务端逻辑由开发者实现，运�
 
 Serverless 是云原生技术发展的高级阶段，可以使开发者更聚焦在业务逻辑，而减少对基础设施的关注。
 
-![Serverless 在云原生技术中的地位](https://tva1.sinaimg.cn/large/006y8mN6ly1g7gkigih88j30ix0dw74a.jpg)
+![Serverless 在云原生技术中的地位](https://tva1.sinaimg.cn/large/006y8mN6ly1g7qjozciygj30jm0e7gll.jpg)
 
 ## Serverless 的定义
 
