@@ -1891,9 +1891,9 @@ spec:
         - name: METRICS_DOMAIN
           value: knative.dev/sources
         - name: CRONJOB_RA_IMAGE
-          value: gcr.io/knative-releases/knative.dev/eventing/cmd/cronjob_receive_adapter@sha256:d43611f74de42a389422cfff12866ac2f531c21255337fd005e7baf4858700cb
+          value: jimmysong/knative-eventing-cmd-cronjob_receive_adapter:0.9 
         - name: APISERVER_RA_IMAGE
-          value: gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:c6364a40ee37cf184c3efa746573c3c0950cc83d69d5d0fde75043d805583d2e
+          value: jimmysong/knative-eventing-cmd-apiserver_receive_adapter:0.9
         image: jimmysong/knative-eventing-cmd-sources_controller:0.9
         name: controller
         ports:
