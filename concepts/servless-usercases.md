@@ -32,7 +32,7 @@ Serverless 的使用场景示例如：
 
 ![传统应用程序架构](https://tva1.sinaimg.cn/large/006y8mN6ly1g7q0wn953ij30g104nglj.jpg)
 
-- 一个 app 前端，iOS 后者安卓
+- 一个 app 前端，iOS 或者安卓
 - 用 Java 写的后端，使用 JBoss 或者 Tomcat 做 server 运行
 - 使用关系型数据库存储用户数据，如 MySQL
 
