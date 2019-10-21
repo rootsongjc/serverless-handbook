@@ -16,7 +16,7 @@
 > 
 > 截止本文发稿时 Istio 已发布 v1.3，但是为了保持兼容性，本文中仍使用 Istio v1.1.7，以保持与 Knative 官方要求的版本统一。
 
-运行以下命令安装 Knative。
+运行以下命令安装 Istio。
 
 ```bash
 # Knative v0.9 在 Istio v1.1.7 验证过
@@ -64,10 +64,16 @@ helm template --namespace=istio-system \
 kubectl apply -f istio.yaml
 ```
 
-验证 Istio 安装。
+使用 Helm 渲染完成的 `istio.yaml` 文件已保存在 `manifests/istio/v1.17/istio.yaml` 文件中，以后每次可以直接使用该文件执行安装和卸载 Istio。
+
+### 验证 Istio 安装
+
+执行下面的命令验证 Istio 的安装是否正确。
+
+首先检查 Istio 的 pod 是否完全启动。
 
 ```bash
-kubectl get pods --namespace istio-system
+$ kubectl get pods --namespace istio-system
 NAME                                      READY   STATUS      RESTARTS   AGE
 istio-citadel-8559955d59-j5xx9            1/1     Running     0          40m
 istio-cleanup-secrets-1.1.7-rb9hp         0/1     Completed   0          40m
@@ -81,11 +87,21 @@ istio-sidecar-injector-c645cf64-8hfzg     1/1     Running     0          40m
 istio-telemetry-575c8d8d66-pb27q          2/2     Running     3          40m
 ```
 
+部署 bookinfo 示例应用确认 Istio 所有组件可以正常工作。
+
+```bash
+kubectl -n default apply -f manifests/istio/bookinfo-sample
+```
+
+参考 [Bookinfo Application](https://istio.io/docs/examples/bookinfo/) 确认可以正常访问 productpage 页面。
+
 ## 安装 Knative
 
 我们安装的 Istio 的基本情况：
 
 - Knative v0.9.0
+
+运行下面的命令直接安装 Knative。
 
 ```bash
 # 安装 Knative CRD
@@ -104,19 +120,21 @@ kubectl apply --filename https://github.com/knative/serving/releases/download/v0
 
 ```bash
 kubectl apply --selector knative.dev/crd-install=true  -f manifests/knative/0.9
-kubectl apply -f manifests/knative/0.9
+kubectl apply -f manifests/knative/v0.9.0
 ```
 
 > **[info] 提示**
 > 
 > 因为 `quay.io`、`gcr.io`、`k8s.gcr.io`、`docker.elastic.co` 等镜像仓库在中国大陆无法访问，位于中国大陆的用户可以使用本书仓库中的 `manifests/knative/0.9` 目录下的 YAML 文件安装，其中以上镜像已替换为 DockerHub 镜像源。
 
-验证 Knative 安装。
+### 验证 Knative 安装
+
+运行下面的命令验证 Knative 所有 pod 是否可以正常启动。
 
 ```bash
-kubectl get pods --namespace knative-serving
-kubectl get pods --namespace knative-eventing
-kubectl get pods --namespace knative-monitoring
+$ kubectl get pods --namespace knative-serving
+$ kubectl get pods --namespace knative-eventing
+$ kubectl get pods --namespace knative-monitoring
 NAME                               READY   STATUS    RESTARTS   AGE
 activator-76f486c78-9k7l7          2/2     Running   3          34m
 autoscaler-7495bcbc4b-j58n5        2/2     Running   2          34m
@@ -143,8 +161,15 @@ prometheus-system-0                   1/1     Running   0          34m
 prometheus-system-1                   1/1     Running   0          34m
 ```
 
+参考 [Getting Started with App Deployment](https://knative.dev/docs/serving/getting-started-knative-app/) 部署 helloworld-go 示例验证 Knative 是否正常运行。
+
+```bash
+kubectl -n default apply -f manifests/knative/samples/helloworld-go/service.yaml
+```
+
 ## 参考
 
 - [Installing Istio for Knative - knative.dev](https://knative.dev/docs/install/installing-istio/)
 - [Installing Knative - knative.dev](https://knative.dev/docs/install/index.html)
 - [Performing a Custom Knative Installation - knative.dev](https://knative.dev/docs/install/knative-custom-install/)
+- [Bookinfo Application - istio.io](https://istio.io/docs/examples/bookinfo/)
