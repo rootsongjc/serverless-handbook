@@ -28,7 +28,7 @@ CloudEvents 是以通用格式描述事件数据的规范，以提供跨服务�
 
 **Event（事件）**
 
-“Event（发生）”是表示发生（Occurrence）及其上下文的数据记录。Event 从 Event 生产者（source）路由到感兴趣的 Event 使用者。Event 路由可以基于 Event 中包含的信息，但是 Event 不会标识特定的路由目的地。Event 包含两种类型的信息：表示 Occurrence 的 Event Data 和提供有关 Occurrence 上下文信息的 Context 元数据。一次发生可能会导致多个事件。
+“Event（事件）”是表示发生（Occurrence）及其上下文的数据记录。Event 从 Event 生产者（source）路由到感兴趣的 Event 使用者。Event 路由可以基于 Event 中包含的信息，但是 Event 不会标识特定的路由目的地。Event 包含两种类型的信息：表示 Occurrence 的 Event Data 和提供有关 Occurrence 上下文信息的 Context 元数据。一次发生可能会导致多个事件。
 
 **Producer（生产者）**
 
@@ -153,7 +153,7 @@ CloudEvent Producer、Consumer 和 Intermediary **可以**内省并记录 Contex
 
 ## 示例
 
-下面时候使用 Json 序列化 CloudEvent 的示例。
+下面是使用 Json 序列化 CloudEvent 的示例。
 
 ```json
 {
