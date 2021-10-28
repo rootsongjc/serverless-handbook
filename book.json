@@ -5,14 +5,10 @@
     "author": "Jimmy Song（宋净超）",
     "links": {
         "sidebar": {
-            "Jimmy Song": "https://jimmysong.io",
-            "Awesome Cloud Native": "https://jimmysong.io/awesome-cloud-native",
-            "ServiceMesher社区": "https://www.servicemesher.com",
-            "Istio Handbook - Istio服务网格进阶实战": "https://www.servicemesher.com/istio-handbook",
-            "Kubernetes Handbook - Kubernetes中文指南/云原生应用架构实践手册": "https://jimmysong.io/kubernetes-handbook",
-            "Cloud Native Go - 基于Go和React的web云原生应用构建指南": "https://jimmysong.io/posts/cloud-native-go",
-            "Cloud Native Python（Python云原生） - 使用Python和React构建云原生应用": "https://jimmysong.io/posts/cloud-native-python",
-            "Cloud Native Java（云原生Java）-  Spring Boot、Spring Cloud与Cloud Foundry弹性系统设计": "https://jimmysong.io/posts/cloud-native-java"
+            "回到首页": "https://jimmysong.io",
+            "云原生开源项目打全": "https://jimmysong.io/awesome-cloud-native",
+            "云原生社区": "https://cloudnative.to",
+            "Kubernetes Handbook - Kubernetes中文指南/云原生应用架构实践手册": "https://jimmysong.io/kubernetes-handbook"
         }
     },
     "plugins": [
@@ -56,7 +52,7 @@
             "size": "small"
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © 2017-2019 | Distributed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>CC BY 4.0</a> | <a href=https://jimmysong.io>jimmysong.io</a>",
+            "copyright": "Copyright © 2017-2021 | Distributed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>CC BY 4.0</a> | <a href=https://jimmysong.io>jimmysong.io</a>",
             "modify_label": " Updated at ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },

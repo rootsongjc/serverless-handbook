@@ -32,13 +32,4 @@ Serverless 是云原生技术发展的高级阶段，可以使开发者更聚焦
 <p align="left">
   <img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7m9ofbzirj302g00vq2p.jpg" alt="CC4 License"/>
 </p>
-
 [署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
-
-## 社区&读者交流
-
-**[加入 ServiceMesher 社区](http://www.servicemesher.com/contact/)**：ServiceMesher 社区是由一群拥有相同价值观和理念的志愿者们共同发起，于 2018 年 4 月正式成立。社区关注领域有：容器、微服务、Service Mesh、Serverless，拥抱开源和云原生。
-
-<p align="center">
-  <img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7m9orx6cuj309k09kdfn.jpg" alt="ServiceMesher微信公众号二维码"/>
-</p>
