@@ -27,7 +27,7 @@
         "-highlight", "prism", "prism-themes",
         "sitemap-general",
         "lightbox",
-        "ga",
+        "ga"
     ],
     "pluginsConfig": {
         "theme-default": {
