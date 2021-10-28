@@ -8,7 +8,7 @@ jobs:
     - checkout
     - run:
         name: Linting the gitbook
-        command: scripts/lint-gitbook.sh
+        command: bash scripts/lint-gitbook.sh
   markdown-spell-check:
     docker:
     - image: jimmysong/gitbook-builder:2019-07-31
@@ -17,7 +17,7 @@ jobs:
     - checkout
     - run:
         name: Running markdown spell check
-        command: scripts/mdspell-check.sh
+        command: bash scripts/mdspell-check.sh
   markdown-style-check:
     docker:
     - image: jimmysong/gitbook-builder:2019-07-31
@@ -26,7 +26,7 @@ jobs:
     - checkout
     - run:
         name: Running markdown style check
-        command: scripts/mdl-check.sh
+        command: bash scripts/mdl-check.sh
 workflows:
   version: 2
   workflow:
