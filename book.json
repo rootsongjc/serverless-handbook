@@ -6,9 +6,9 @@
     "links": {
         "sidebar": {
             "回到首页": "https://jimmysong.io",
-            "云原生开源项目打全": "https://jimmysong.io/awesome-cloud-native",
+            "云原生开源项目打全": "https://jimmysong.io/awesome-cloud-native/",
             "云原生社区": "https://cloudnative.to",
-            "Kubernetes Handbook - Kubernetes中文指南/云原生应用架构实践手册": "https://jimmysong.io/kubernetes-handbook"
+            "Kubernetes 中文指南": "https://jimmysong.io/kubernetes-handbook/"
         }
     },
     "plugins": [
@@ -27,7 +27,9 @@
         "-highlight", "prism", "prism-themes",
         "sitemap-general",
         "lightbox",
-        "ga"
+        "ga",
+        "insert-logo",
+        "adsense"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -49,7 +51,7 @@
             "size": "small"
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © 2017-2021 | Distributed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>CC BY 4.0</a> | <a href=https://jimmysong.io>jimmysong.io</a>",
+            "copyright": "Copyright © 2017-2022 | Distributed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>CC BY 4.0</a> | <a href=https://jimmysong.io>jimmysong.io</a>",
             "modify_label": " Updated at ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -66,6 +68,17 @@
         },
         "ga": {
             "token": "UA-93485976-1"
+        },
+        "insert-logo": {
+            "url": "https://jimmysong.io/images/logo-black-text.png",
+            "style": "background: none; max-height: 100px; min-height: 30px"
+        },
+        "adsense": {
+            "client": "ca-pub-4029167986768912",
+            "slot": "2445941692",
+            "format": "auto",
+            "element": ".page-inner section",
+            "position": "bottom"
         }
     }
 }

@@ -11,12 +11,12 @@ Serverless 是云原生技术发展的高级阶段，可以使开发者更聚焦
     <img src="https://circleci.com/gh/rootsongjc/serverless-handbook/tree/master.svg?style=svg" alt="CircleCI"/>
   </a>
 </p>
-
 <p align="center">
   <a href="https://jimmysong.io/serverless-handbook">
-    <img src="cover.jpg" width="50%" height="50%" alt="Serverless Handbook——无服务器架构实践手册 by Jimmy Song(宋净超）">
+    <img src="cover-thumbnail.jpg" title="Serverless handbook" alt="Serverless Handbook——无服务器架构实践手册 by Jimmy Song(宋净超）">
   </a>
 </p>
+
 
 本书是本人学习和实践 Serverless 过程中所整理的资料，主要关注的 Serverless 开源项目是 [Knative](https://github.com/knative)。
 
